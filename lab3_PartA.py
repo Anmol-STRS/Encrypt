@@ -5,7 +5,6 @@ from Crypto.Util.Padding import pad
 from Crypto.Util.Padding import unpad
 from base64 import b64encode
 from base64 import b64decode
-from Crypto.Hash import SHA512
  
 class encryptDecrypt:
 #if you need to add more methods feel free to add them
@@ -72,3 +71,4 @@ print("Encrypted Text from AES: {}".format(encryptedText1));
 decodedEncryptedText1= b64decode(encryptedText1)
 decryptedText1 = objEncrypt.decryptAes(decodedEncryptedText1,encryptionKey1)
 print('Decrypted Text(Used Aes): {}'.format(decryptedText))
+
